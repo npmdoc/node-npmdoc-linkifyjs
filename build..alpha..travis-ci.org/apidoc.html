@@ -1,0 +1,5969 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+    >linkifyjs (v2.1.4)</a>
+</h1>
+<h4>Intelligent link recognition, made easy</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs">module linkifyjs</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.element">
+            function <span class="apidocSignatureSpan">linkifyjs.</span>element
+            <span class="apidocSignatureSpan">(element, opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.find">
+            function <span class="apidocSignatureSpan">linkifyjs.</span>find
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.inherits">
+            function <span class="apidocSignatureSpan">linkifyjs.</span>inherits
+            <span class="apidocSignatureSpan">(parent, child)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.options.Options">
+            function <span class="apidocSignatureSpan">linkifyjs.</span>options.Options
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.State">
+            function <span class="apidocSignatureSpan">linkifyjs.</span>parser.State
+            <span class="apidocSignatureSpan">(tClass)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.react">
+            function <span class="apidocSignatureSpan">linkifyjs.</span>react
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.State">
+            function <span class="apidocSignatureSpan">linkifyjs.</span>scanner.State
+            <span class="apidocSignatureSpan">(tClass)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.test">
+            function <span class="apidocSignatureSpan">linkifyjs.</span>test
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.tokenize">
+            function <span class="apidocSignatureSpan">linkifyjs.</span>tokenize
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>entity_parser</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>evented_tokenizer</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>linkify</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>linkify_element</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>linkify_html</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>linkify_jquery</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>linkify_react</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>linkify_string</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>options</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>options.Options.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>options.defaults</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>parser</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>parser.State.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>parser.TOKENS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>parser.TOKENS.Base.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>parser.TOKENS.EMAIL.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>parser.TOKENS.MAILTOEMAIL.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>parser.TOKENS.NL.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>parser.TOKENS.TEXT.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>parser.TOKENS.URL.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>react.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.State.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.AMPERSAND.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.AT.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.Base.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.CLOSEANGLEBRACKET.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.CLOSEBRACE.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.CLOSEBRACKET.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.CLOSEPAREN.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.COLON.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.DOMAIN.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.DOT.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.LOCALHOST.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.MAILTO.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.NL.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.NUM.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.OPENANGLEBRACKET.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.OPENBRACE.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.OPENBRACKET.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.OPENPAREN.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.PLUS.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.POUND.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.PROTOCOL.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.PUNCTUATION.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.QUERY.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.SLASH.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.SYM.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.TLD.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.UNDERSCORE.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>scanner.TOKENS.WS.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>tokenizer</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.</span>utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.element">module linkifyjs.element</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.element.element">
+            function <span class="apidocSignatureSpan">linkifyjs.</span>element
+            <span class="apidocSignatureSpan">(element, opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.element.helper">
+            function <span class="apidocSignatureSpan">linkifyjs.element.</span>helper
+            <span class="apidocSignatureSpan">(element, opts, doc)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.element.normalize">
+            function <span class="apidocSignatureSpan">linkifyjs.element.</span>normalize
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.entity_parser">module linkifyjs.entity_parser</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.entity_parser.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.entity_parser.default">
+            function <span class="apidocSignatureSpan">linkifyjs.entity_parser.</span>default
+            <span class="apidocSignatureSpan">(named)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.evented_tokenizer">module linkifyjs.evented_tokenizer</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.evented_tokenizer.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.evented_tokenizer.default">
+            function <span class="apidocSignatureSpan">linkifyjs.evented_tokenizer.</span>default
+            <span class="apidocSignatureSpan">(delegate, entityParser)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.linkify">module linkifyjs.linkify</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.linkify.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.linkify.find">
+            function <span class="apidocSignatureSpan">linkifyjs.linkify.</span>find
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.linkify.inherits">
+            function <span class="apidocSignatureSpan">linkifyjs.linkify.</span>inherits
+            <span class="apidocSignatureSpan">(parent, child)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.linkify.test">
+            function <span class="apidocSignatureSpan">linkifyjs.linkify.</span>test
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.linkify.tokenize">
+            function <span class="apidocSignatureSpan">linkifyjs.linkify.</span>tokenize
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.linkify.</span>options</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.linkify.</span>parser</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.linkify.</span>scanner</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.linkify_element">module linkifyjs.linkify_element</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.linkify_element.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.linkify_element.default">
+            function <span class="apidocSignatureSpan">linkifyjs.linkify_element.</span>default
+            <span class="apidocSignatureSpan">(element, opts)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.linkify_html">module linkifyjs.linkify_html</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.linkify_html.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.linkify_html.default">
+            function <span class="apidocSignatureSpan">linkifyjs.linkify_html.</span>default
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.linkify_jquery">module linkifyjs.linkify_jquery</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.linkify_jquery.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.linkify_jquery.default">
+            function <span class="apidocSignatureSpan">linkifyjs.linkify_jquery.</span>default
+            <span class="apidocSignatureSpan">($)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.linkify_react">module linkifyjs.linkify_react</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.linkify_react.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.linkify_react.default">
+            function <span class="apidocSignatureSpan">linkifyjs.linkify_react.</span>default
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.linkify_string">module linkifyjs.linkify_string</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.linkify_string.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.linkify_string.default">
+            function <span class="apidocSignatureSpan">linkifyjs.linkify_string.</span>default
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.options">module linkifyjs.options</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.options.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.options.Options">
+            function <span class="apidocSignatureSpan">linkifyjs.options.</span>Options
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.options.contains">
+            function <span class="apidocSignatureSpan">linkifyjs.options.</span>contains
+            <span class="apidocSignatureSpan">(arr, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.options.</span>defaults</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.options.Options">module linkifyjs.options.Options</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.options.Options.Options">
+            function <span class="apidocSignatureSpan">linkifyjs.options.</span>Options
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.options.Options.prototype">module linkifyjs.options.Options.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.options.Options.prototype.check">
+            function <span class="apidocSignatureSpan">linkifyjs.options.Options.prototype.</span>check
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.options.Options.prototype.get">
+            function <span class="apidocSignatureSpan">linkifyjs.options.Options.prototype.</span>get
+            <span class="apidocSignatureSpan">(key, operator, token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.options.Options.prototype.getObject">
+            function <span class="apidocSignatureSpan">linkifyjs.options.Options.prototype.</span>getObject
+            <span class="apidocSignatureSpan">(key, operator, token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.options.Options.prototype.resolve">
+            function <span class="apidocSignatureSpan">linkifyjs.options.Options.prototype.</span>resolve
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.options.defaults">module linkifyjs.options.defaults</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.options.defaults.</span>nl2br</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.options.defaults.</span>validate</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.options.defaults.format">
+            function <span class="apidocSignatureSpan">linkifyjs.options.defaults.</span>format
+            <span class="apidocSignatureSpan">(val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.options.defaults.formatHref">
+            function <span class="apidocSignatureSpan">linkifyjs.options.defaults.</span>formatHref
+            <span class="apidocSignatureSpan">(val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.options.defaults.target">
+            function <span class="apidocSignatureSpan">linkifyjs.options.defaults.</span>target
+            <span class="apidocSignatureSpan">(href, type)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.options.defaults.</span>attributes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.options.defaults.</span>events</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.options.defaults.</span>ignoreTags</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.options.defaults.</span>className</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.options.defaults.</span>defaultProtocol</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.options.defaults.</span>tagName</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.parser">module linkifyjs.parser</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.parser.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.State">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.</span>State
+            <span class="apidocSignatureSpan">(tClass)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.run">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.</span>run
+            <span class="apidocSignatureSpan">(tokens)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.parser.</span>TOKENS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.parser.</span>start</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.parser.State">module linkifyjs.parser.State</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.State.State">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.</span>State
+            <span class="apidocSignatureSpan">(tClass)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.parser.State.prototype">module linkifyjs.parser.State.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.State.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.State.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(tClass)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.State.prototype.jump">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.State.prototype.</span>jump
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.State.prototype.test">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.State.prototype.</span>test
+            <span class="apidocSignatureSpan">(token, tokenClass)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.parser.TOKENS">module linkifyjs.parser.TOKENS</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.Base">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.</span>Base
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.EMAIL">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.</span>EMAIL
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.MAILTOEMAIL">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.</span>MAILTOEMAIL
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.NL">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.</span>NL
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.TEXT">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.</span>TEXT
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.URL">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.</span>URL
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.parser.TOKENS.Base.prototype">module linkifyjs.parser.TOKENS.Base.prototype</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.Base.prototype.</span>isLink</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.Base.prototype.toHref">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.Base.prototype.</span>toHref
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.Base.prototype.toObject">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.Base.prototype.</span>toObject
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.Base.prototype.toString">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.Base.prototype.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.Base.prototype.</span>type</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.parser.TOKENS.EMAIL.prototype">module linkifyjs.parser.TOKENS.EMAIL.prototype</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.EMAIL.prototype.</span>isLink</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.EMAIL.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.EMAIL.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.EMAIL.prototype.toHref">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.EMAIL.prototype.</span>toHref
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.EMAIL.prototype.</span>type</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.parser.TOKENS.MAILTOEMAIL.prototype">module linkifyjs.parser.TOKENS.MAILTOEMAIL.prototype</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.MAILTOEMAIL.prototype.</span>isLink</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.MAILTOEMAIL.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.MAILTOEMAIL.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.MAILTOEMAIL.prototype.</span>type</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.parser.TOKENS.NL.prototype">module linkifyjs.parser.TOKENS.NL.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.NL.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.NL.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.NL.prototype.</span>type</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.parser.TOKENS.TEXT.prototype">module linkifyjs.parser.TOKENS.TEXT.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.TEXT.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.TEXT.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.TEXT.prototype.</span>type</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.parser.TOKENS.URL.prototype">module linkifyjs.parser.TOKENS.URL.prototype</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.URL.prototype.</span>isLink</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.URL.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.URL.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.URL.prototype.hasProtocol">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.URL.prototype.</span>hasProtocol
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.parser.TOKENS.URL.prototype.toHref">
+            function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.URL.prototype.</span>toHref
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.URL.prototype.</span>type</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.react">module linkifyjs.react</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.react.react">
+            function <span class="apidocSignatureSpan">linkifyjs.</span>react
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.react.prototype">module linkifyjs.react.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.react.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.react.prototype.render">
+            function <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>__reactAutoBindPairs</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>childContextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>componentDidMount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>componentDidUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>componentWillMount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>componentWillReceiveProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>componentWillUnmount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>componentWillUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>getChildContext</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>getDefaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>getInitialState</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>mixins</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>shouldComponentUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>statics</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>updateComponent</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner">module linkifyjs.scanner</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.scanner.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.State">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.</span>State
+            <span class="apidocSignatureSpan">(tClass)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.run">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.</span>run
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.scanner.</span>TOKENS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">linkifyjs.scanner.</span>start</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.State">module linkifyjs.scanner.State</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.State.State">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.</span>State
+            <span class="apidocSignatureSpan">(tClass)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.State.prototype">module linkifyjs.scanner.State.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.State.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.State.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(tClass)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.State.prototype.test">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.State.prototype.</span>test
+            <span class="apidocSignatureSpan">(character, charOrRegExp)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS">module linkifyjs.scanner.TOKENS</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.AMPERSAND">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>AMPERSAND
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.AT">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>AT
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.Base">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>Base
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.CLOSEANGLEBRACKET">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>CLOSEANGLEBRACKET
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.CLOSEBRACE">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>CLOSEBRACE
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.CLOSEBRACKET">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>CLOSEBRACKET
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.CLOSEPAREN">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>CLOSEPAREN
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.COLON">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>COLON
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.DOMAIN">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>DOMAIN
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.DOT">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>DOT
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.LOCALHOST">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>LOCALHOST
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.MAILTO">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>MAILTO
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.NL">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>NL
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.NUM">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>NUM
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.OPENANGLEBRACKET">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>OPENANGLEBRACKET
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.OPENBRACE">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>OPENBRACE
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.OPENBRACKET">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>OPENBRACKET
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.OPENPAREN">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>OPENPAREN
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.PLUS">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>PLUS
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.POUND">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>POUND
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.PROTOCOL">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>PROTOCOL
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.PUNCTUATION">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>PUNCTUATION
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.QUERY">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>QUERY
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.SLASH">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>SLASH
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.SYM">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>SYM
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.TLD">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>TLD
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.UNDERSCORE">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>UNDERSCORE
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.WS">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>WS
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.AMPERSAND.prototype">module linkifyjs.scanner.TOKENS.AMPERSAND.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.AMPERSAND.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.AMPERSAND.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.AMPERSAND.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.AT.prototype">module linkifyjs.scanner.TOKENS.AT.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.AT.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.AT.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.AT.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.Base.prototype">module linkifyjs.scanner.TOKENS.Base.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.Base.prototype.toString">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.Base.prototype.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.CLOSEANGLEBRACKET.prototype">module linkifyjs.scanner.TOKENS.CLOSEANGLEBRACKET.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.CLOSEANGLEBRACKET.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.CLOSEANGLEBRACKET.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.CLOSEANGLEBRACKET.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.CLOSEBRACE.prototype">module linkifyjs.scanner.TOKENS.CLOSEBRACE.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.CLOSEBRACE.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.CLOSEBRACE.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.CLOSEBRACE.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.CLOSEBRACKET.prototype">module linkifyjs.scanner.TOKENS.CLOSEBRACKET.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.CLOSEBRACKET.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.CLOSEBRACKET.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.CLOSEBRACKET.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.CLOSEPAREN.prototype">module linkifyjs.scanner.TOKENS.CLOSEPAREN.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.CLOSEPAREN.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.CLOSEPAREN.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.CLOSEPAREN.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.COLON.prototype">module linkifyjs.scanner.TOKENS.COLON.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.COLON.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.COLON.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.COLON.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.DOMAIN.prototype">module linkifyjs.scanner.TOKENS.DOMAIN.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.DOMAIN.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.DOMAIN.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.DOT.prototype">module linkifyjs.scanner.TOKENS.DOT.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.DOT.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.DOT.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.DOT.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.LOCALHOST.prototype">module linkifyjs.scanner.TOKENS.LOCALHOST.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.LOCALHOST.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.LOCALHOST.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.MAILTO.prototype">module linkifyjs.scanner.TOKENS.MAILTO.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.MAILTO.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.MAILTO.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.MAILTO.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.NL.prototype">module linkifyjs.scanner.TOKENS.NL.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.NL.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.NL.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.NL.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.NUM.prototype">module linkifyjs.scanner.TOKENS.NUM.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.NUM.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.NUM.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.OPENANGLEBRACKET.prototype">module linkifyjs.scanner.TOKENS.OPENANGLEBRACKET.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.OPENANGLEBRACKET.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.OPENANGLEBRACKET.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.OPENANGLEBRACKET.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.OPENBRACE.prototype">module linkifyjs.scanner.TOKENS.OPENBRACE.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.OPENBRACE.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.OPENBRACE.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.OPENBRACE.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.OPENBRACKET.prototype">module linkifyjs.scanner.TOKENS.OPENBRACKET.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.OPENBRACKET.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.OPENBRACKET.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.OPENBRACKET.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.OPENPAREN.prototype">module linkifyjs.scanner.TOKENS.OPENPAREN.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.OPENPAREN.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.OPENPAREN.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.OPENPAREN.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.PLUS.prototype">module linkifyjs.scanner.TOKENS.PLUS.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.PLUS.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.PLUS.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.PLUS.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.POUND.prototype">module linkifyjs.scanner.TOKENS.POUND.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.POUND.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.POUND.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.POUND.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.PROTOCOL.prototype">module linkifyjs.scanner.TOKENS.PROTOCOL.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.PROTOCOL.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.PROTOCOL.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.PUNCTUATION.prototype">module linkifyjs.scanner.TOKENS.PUNCTUATION.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.PUNCTUATION.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.PUNCTUATION.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.QUERY.prototype">module linkifyjs.scanner.TOKENS.QUERY.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.QUERY.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.QUERY.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.QUERY.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.SLASH.prototype">module linkifyjs.scanner.TOKENS.SLASH.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.SLASH.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.SLASH.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.SLASH.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.SYM.prototype">module linkifyjs.scanner.TOKENS.SYM.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.SYM.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.SYM.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.TLD.prototype">module linkifyjs.scanner.TOKENS.TLD.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.TLD.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.TLD.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.UNDERSCORE.prototype">module linkifyjs.scanner.TOKENS.UNDERSCORE.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.UNDERSCORE.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.UNDERSCORE.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.UNDERSCORE.prototype.</span>v</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.scanner.TOKENS.WS.prototype">module linkifyjs.scanner.TOKENS.WS.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.scanner.TOKENS.WS.prototype.constructor">
+            function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.WS.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.tokenize">module linkifyjs.tokenize</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.tokenize.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.tokenize.default">
+            function <span class="apidocSignatureSpan">linkifyjs.tokenize.</span>default
+            <span class="apidocSignatureSpan">(input, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.tokenizer">module linkifyjs.tokenizer</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.tokenizer.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.tokenizer.default">
+            function <span class="apidocSignatureSpan">linkifyjs.tokenizer.</span>default
+            <span class="apidocSignatureSpan">(entityParser, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.linkifyjs.utils">module linkifyjs.utils</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">linkifyjs.utils.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.utils.isAlpha">
+            function <span class="apidocSignatureSpan">linkifyjs.utils.</span>isAlpha
+            <span class="apidocSignatureSpan">(char)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.utils.isSpace">
+            function <span class="apidocSignatureSpan">linkifyjs.utils.</span>isSpace
+            <span class="apidocSignatureSpan">(char)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.linkifyjs.utils.preprocessInput">
+            function <span class="apidocSignatureSpan">linkifyjs.utils.</span>preprocessInput
+            <span class="apidocSignatureSpan">(input)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs" id="apidoc.module.linkifyjs">module linkifyjs</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.element" id="apidoc.element.linkifyjs.element">
+        function <span class="apidocSignatureSpan">linkifyjs.</span>element
+        <span class="apidocSignatureSpan">(element, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function linkifyElement(element, opts) {
+	var doc = arguments.length &#x3e; 2 &#x26;&#x26; arguments[2] !== undefined ? arguments[2] : false;
+
+
+	try {
+		doc = doc || document || window &#x26;&#x26; window.document || global &#x26;&#x26; global.document;
+	} catch (e) {/* do nothing for now */}
+
+	if (!doc) {
+		throw new Error(&#x27;Cannot find document implementation. &#x27; + &#x27;If you are in a non-browser environment like Node.js, &#x27; + &#x27;pass the
+ document implementation as the third argument to linkifyElement.&#x27;);
+	}
+
+	opts = new Options(opts);
+	return linkifyElementHelper(element, opts, doc);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.find" id="apidoc.element.linkifyjs.find">
+        function <span class="apidocSignatureSpan">linkifyjs.</span>find
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function find(str) {
+	var type = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : null;
+
+	var tokens = tokenize(str);
+	var filtered = [];
+
+	for (var i = 0; i &#x3c; tokens.length; i++) {
+		var token = tokens[i];
+		if (token.isLink &#x26;&#x26; (!type || token.type === type)) {
+			filtered.push(token.toObject());
+		}
+	}
+
+	return filtered;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  target: &#x22;_blank&#x22;
+});
+```
+
+#### Find all links in the given string
+
+```js
+linkify.<span class="apidocCodeKeywordSpan">find</span>(&#x27;Any links to github.com here? If not, contact test@example.com&#x27
+;);
+```
+
+Returns the following array
+
+```js
+[
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.inherits" id="apidoc.element.linkifyjs.inherits">
+        function <span class="apidocSignatureSpan">linkifyjs.</span>inherits
+        <span class="apidocSignatureSpan">(parent, child)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function inherits(parent, child) {
+	var props = arguments.length &#x3e; 2 &#x26;&#x26; arguments[2] !== undefined ? arguments[2] : {};
+
+	var extended = Object.create(parent.prototype);
+	for (var p in props) {
+		extended[p] = props[p];
+	}
+	extended.constructor = child;
+	child.prototype = extended;
+	return child;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.options.Options" id="apidoc.element.linkifyjs.options.Options">
+        function <span class="apidocSignatureSpan">linkifyjs.</span>options.Options
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Options(opts) {
+	opts = opts || {};
+
+	this.defaultProtocol = opts.defaultProtocol || defaults.defaultProtocol;
+	this.events = opts.events || defaults.events;
+	this.format = opts.format || defaults.format;
+	this.formatHref = opts.formatHref || defaults.formatHref;
+	this.nl2br = opts.nl2br || defaults.nl2br;
+	this.tagName = opts.tagName || defaults.tagName;
+	this.target = opts.target || defaults.target;
+	this.validate = opts.validate || defaults.validate;
+	this.ignoreTags = [];
+
+	// linkAttributes and linkClass is deprecated
+	this.attributes = opts.attributes || opts.linkAttributes || defaults.attributes;
+	this.className = opts.className || opts.linkClass || defaults.className;
+
+	// Make all tags names upper case
+
+	var ignoredTags = opts.ignoreTags || defaults.ignoreTags;
+	for (var i = 0; i &#x3c; ignoredTags.length; i++) {
+		this.ignoreTags.push(ignoredTags[i].toUpperCase());
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.State" id="apidoc.element.linkifyjs.parser.State">
+        function <span class="apidocSignatureSpan">linkifyjs.</span>parser.State
+        <span class="apidocSignatureSpan">(tClass)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parser.State = function (tClass) {
+		this.j = [];
+		this.T = tClass || null;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.react" id="apidoc.element.linkifyjs.react">
+        function <span class="apidocSignatureSpan">linkifyjs.</span>react
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">react = function (props, context, updater) {
+  // This constructor gets overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    process.env.NODE_ENV !== &#x27;production&#x27; ? warning(this instanceof Constructor, &#x27;Something is calling a React component directly
+. Use a factory or &#x27; + &#x27;JSX instead. See: https://fb.me/react-legacyfactory&#x27;) : void 0;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindPairs.length) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn&#x27;t have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    // We allow auto-mocks to proceed as if they&#x27;re returning null.
+    if (initialState === undefined &#x26;&#x26; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === &#x27;object&#x27; &#x26;&#x26; !Array.isArray(initialState)) ? process.env.NODE_ENV !== &#x27;production&#x27; ? invariant(false, &#x27;%
+s.getInitialState(): must return an object or null&#x27;, Constructor.displayName || &#x27;ReactCompositeComponent&#x27;) : _prodInvariant(&#x27;82&#x27;,
+Constructor.displayName || &#x27;ReactCompositeComponent&#x27;) : void 0;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.State" id="apidoc.element.linkifyjs.scanner.State">
+        function <span class="apidocSignatureSpan">linkifyjs.</span>scanner.State
+        <span class="apidocSignatureSpan">(tClass)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">scanner.State = function (tClass) {
+		this.j = [];
+		this.T = tClass || null;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.test" id="apidoc.element.linkifyjs.test">
+        function <span class="apidocSignatureSpan">linkifyjs.</span>test
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function test(str) {
+	var type = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : null;
+
+	var tokens = tokenize(str);
+	return tokens.length === 1 &#x26;&#x26; tokens[0].isLink &#x26;&#x26; (!type || tokens[0].type === type);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+&#x3c;script src=&#x22;linkify.amd.js&#x22;&#x3e;&#x3c;/script&#x3e;
+&#x3c;script src=&#x22;linkify-plugin-hashtag.amd.js&#x22;&#x3e;&#x3c;/script&#x3e; &#x3c;!-- optional --&#x3e;
+&#x3c;script src=&#x22;linkify-element.amd.js&#x22;&#x3e;&#x3c;/script&#x3e;
+```
+
+```js
+require([&#x27;linkify&#x27;], function (linkify) {
+linkify.<span class="apidocCodeKeywordSpan">test</span>(&#x27;github.com&#x27;); // true
+linkify.test(&#x27;github.com&#x27;, &#x27;email&#x27;); // false
+});
+
+require([&#x27;linkify-element&#x27;], function (linkifyElement) {
+
+// Linkify the #sidebar element
+linkifyElement(document.getElementById(&#x27;sidebar&#x27;), {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.tokenize" id="apidoc.element.linkifyjs.tokenize">
+        function <span class="apidocSignatureSpan">linkifyjs.</span>tokenize
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function tokenize(str) {
+	return parser.run(scanner.run(str));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+	`tokens` and `token` in this section refer to tokens generated by the HTML
+	parser.
+*/
+function linkifyHtml(str) {
+	var opts = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : {};
+
+	var tokens = _simpleHtmlTokenizer2.default.<span class="apidocCodeKeywordSpan">tokenize</span>(str);
+	var linkifiedTokens = [];
+	var linkified = [];
+	var i;
+
+	opts = new Options(opts);
+
+	// Linkify the tokens given by the parser
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.element" id="apidoc.module.linkifyjs.element">module linkifyjs.element</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.element.element" id="apidoc.element.linkifyjs.element.element">
+        function <span class="apidocSignatureSpan">linkifyjs.</span>element
+        <span class="apidocSignatureSpan">(element, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function linkifyElement(element, opts) {
+	var doc = arguments.length &#x3e; 2 &#x26;&#x26; arguments[2] !== undefined ? arguments[2] : false;
+
+
+	try {
+		doc = doc || document || window &#x26;&#x26; window.document || global &#x26;&#x26; global.document;
+	} catch (e) {/* do nothing for now */}
+
+	if (!doc) {
+		throw new Error(&#x27;Cannot find document implementation. &#x27; + &#x27;If you are in a non-browser environment like Node.js, &#x27; + &#x27;pass the
+ document implementation as the third argument to linkifyElement.&#x27;);
+	}
+
+	opts = new Options(opts);
+	return linkifyElementHelper(element, opts, doc);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.element.helper" id="apidoc.element.linkifyjs.element.helper">
+        function <span class="apidocSignatureSpan">linkifyjs.element.</span>helper
+        <span class="apidocSignatureSpan">(element, opts, doc)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function linkifyElementHelper(element, opts, doc) {
+
+	// Can the element be linkified?
+	if (!element || element.nodeType !== HTML_NODE) {
+		throw new Error(&#x27;Cannot linkify &#x27; + element + &#x27; - Invalid DOM Node type&#x27;);
+	}
+
+	var ignoreTags = opts.ignoreTags;
+
+	// Is this element already a link?
+	if (element.tagName === &#x27;A&#x27; || options.contains(ignoreTags, element.tagName)) {
+		// No need to linkify
+		return element;
+	}
+
+	var childElement = element.firstChild;
+
+	while (childElement) {
+
+		switch (childElement.nodeType) {
+			case HTML_NODE:
+				linkifyElementHelper(childElement, opts, doc);
+				break;
+			case TXT_NODE:
+
+				var str = childElement.nodeValue;
+				var tokens = tokenize(str);
+
+				if (tokens.length === 0 || tokens.length === 1 &#x26;&#x26; tokens[0] instanceof TEXT_TOKEN) {
+					// No node replacement required
+					break;
+				}
+
+				var nodes = tokensToNodes(tokens, opts, doc);
+
+				// Swap out the current child for the set of nodes
+				replaceChildWithChildren(element, childElement, nodes);
+
+				// so that the correct sibling is selected next
+				childElement = nodes[nodes.length - 1];
+
+				break;
+		}
+
+		childElement = childElement.nextSibling;
+	}
+
+	return element;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		// Already applied
+		return;
+	}
+
+	function jqLinkify(opts) {
+		opts = _linkifyElement2.default.normalize(opts);
+		return this.each(function () {
+			_linkifyElement2.default.<span class="apidocCodeKeywordSpan">helper</span>(this, opts, doc);
+		});
+	}
+
+	$.fn.linkify = jqLinkify;
+
+	$(doc).ready(function () {
+		$(&#x27;[data-linkify]&#x27;).each(function () {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.element.normalize" id="apidoc.element.linkifyjs.element.normalize">
+        function <span class="apidocSignatureSpan">linkifyjs.element.</span>normalize
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">normalize = function (opts) {
+	return new Options(opts);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+	if (typeof $.fn.linkify === &#x27;function&#x27;) {
+		// Already applied
+		return;
+	}
+
+	function jqLinkify(opts) {
+		opts = _linkifyElement2.default.<span class="apidocCodeKeywordSpan">normalize</span>(opts);
+		return this.each(function () {
+			_linkifyElement2.default.helper(this, opts, doc);
+		});
+	}
+
+	$.fn.linkify = jqLinkify;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.entity_parser" id="apidoc.module.linkifyjs.entity_parser">module linkifyjs.entity_parser</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.entity_parser.default" id="apidoc.element.linkifyjs.entity_parser.default">
+        function <span class="apidocSignatureSpan">linkifyjs.entity_parser.</span>default
+        <span class="apidocSignatureSpan">(named)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EntityParser(named) {
+  this.named = named;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var _html5NamedCharRefs = require(&#x27;./html5-named-char-refs&#x27;);
+
+var _html5NamedCharRefs2 = _interopRequireDefault(_html5NamedCharRefs);
+
+function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? obj : { default: obj }; }
+
+function tokenize(input, options) {
+  var tokenizer = new _tokenizer2.<span class="apidocCodeKeywordSpan">default</span>(new _entityParser2.default(_html5NamedCharRefs2
+.default), options);
+  return tokenizer.tokenize(input);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.evented_tokenizer" id="apidoc.module.linkifyjs.evented_tokenizer">module linkifyjs.evented_tokenizer</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.evented_tokenizer.default" id="apidoc.element.linkifyjs.evented_tokenizer.default">
+        function <span class="apidocSignatureSpan">linkifyjs.evented_tokenizer.</span>default
+        <span class="apidocSignatureSpan">(delegate, entityParser)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventedTokenizer(delegate, entityParser) {
+  this.delegate = delegate;
+  this.entityParser = entityParser;
+
+  this.state = null;
+  this.input = null;
+
+  this.index = -1;
+  this.line = -1;
+  this.column = -1;
+  this.tagLine = -1;
+  this.tagColumn = -1;
+
+  this.reset();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var _html5NamedCharRefs = require(&#x27;./html5-named-char-refs&#x27;);
+
+var _html5NamedCharRefs2 = _interopRequireDefault(_html5NamedCharRefs);
+
+function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? obj : { default: obj }; }
+
+function tokenize(input, options) {
+  var tokenizer = new _tokenizer2.<span class="apidocCodeKeywordSpan">default</span>(new _entityParser2.default(_html5NamedCharRefs2
+.default), options);
+  return tokenizer.tokenize(input);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.linkify" id="apidoc.module.linkifyjs.linkify">module linkifyjs.linkify</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.linkify.find" id="apidoc.element.linkifyjs.linkify.find">
+        function <span class="apidocSignatureSpan">linkifyjs.linkify.</span>find
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function find(str) {
+	var type = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : null;
+
+	var tokens = tokenize(str);
+	var filtered = [];
+
+	for (var i = 0; i &#x3c; tokens.length; i++) {
+		var token = tokens[i];
+		if (token.isLink &#x26;&#x26; (!type || token.type === type)) {
+			filtered.push(token.toObject());
+		}
+	}
+
+	return filtered;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  target: &#x22;_blank&#x22;
+});
+```
+
+#### Find all links in the given string
+
+```js
+linkify.<span class="apidocCodeKeywordSpan">find</span>(&#x27;Any links to github.com here? If not, contact test@example.com&#x27
+;);
+```
+
+Returns the following array
+
+```js
+[
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.linkify.inherits" id="apidoc.element.linkifyjs.linkify.inherits">
+        function <span class="apidocSignatureSpan">linkifyjs.linkify.</span>inherits
+        <span class="apidocSignatureSpan">(parent, child)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function inherits(parent, child) {
+	var props = arguments.length &#x3e; 2 &#x26;&#x26; arguments[2] !== undefined ? arguments[2] : {};
+
+	var extended = Object.create(parent.prototype);
+	for (var p in props) {
+		extended[p] = props[p];
+	}
+	extended.constructor = child;
+	child.prototype = extended;
+	return child;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.linkify.test" id="apidoc.element.linkifyjs.linkify.test">
+        function <span class="apidocSignatureSpan">linkifyjs.linkify.</span>test
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function test(str) {
+	var type = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : null;
+
+	var tokens = tokenize(str);
+	return tokens.length === 1 &#x26;&#x26; tokens[0].isLink &#x26;&#x26; (!type || tokens[0].type === type);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+&#x3c;script src=&#x22;linkify.amd.js&#x22;&#x3e;&#x3c;/script&#x3e;
+&#x3c;script src=&#x22;linkify-plugin-hashtag.amd.js&#x22;&#x3e;&#x3c;/script&#x3e; &#x3c;!-- optional --&#x3e;
+&#x3c;script src=&#x22;linkify-element.amd.js&#x22;&#x3e;&#x3c;/script&#x3e;
+```
+
+```js
+require([&#x27;linkify&#x27;], function (linkify) {
+linkify.<span class="apidocCodeKeywordSpan">test</span>(&#x27;github.com&#x27;); // true
+linkify.test(&#x27;github.com&#x27;, &#x27;email&#x27;); // false
+});
+
+require([&#x27;linkify-element&#x27;], function (linkifyElement) {
+
+// Linkify the #sidebar element
+linkifyElement(document.getElementById(&#x27;sidebar&#x27;), {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.linkify.tokenize" id="apidoc.element.linkifyjs.linkify.tokenize">
+        function <span class="apidocSignatureSpan">linkifyjs.linkify.</span>tokenize
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function tokenize(str) {
+	return parser.run(scanner.run(str));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+	`tokens` and `token` in this section refer to tokens generated by the HTML
+	parser.
+*/
+function linkifyHtml(str) {
+	var opts = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : {};
+
+	var tokens = _simpleHtmlTokenizer2.default.<span class="apidocCodeKeywordSpan">tokenize</span>(str);
+	var linkifiedTokens = [];
+	var linkified = [];
+	var i;
+
+	opts = new Options(opts);
+
+	// Linkify the tokens given by the parser
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.linkify_element" id="apidoc.module.linkifyjs.linkify_element">module linkifyjs.linkify_element</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.linkify_element.default" id="apidoc.element.linkifyjs.linkify_element.default">
+        function <span class="apidocSignatureSpan">linkifyjs.linkify_element.</span>default
+        <span class="apidocSignatureSpan">(element, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function linkifyElement(element, opts) {
+	var doc = arguments.length &#x3e; 2 &#x26;&#x26; arguments[2] !== undefined ? arguments[2] : false;
+
+
+	try {
+		doc = doc || document || window &#x26;&#x26; window.document || global &#x26;&#x26; global.document;
+	} catch (e) {/* do nothing for now */}
+
+	if (!doc) {
+		throw new Error(&#x27;Cannot find document implementation. &#x27; + &#x27;If you are in a non-browser environment like Node.js, &#x27; + &#x27;pass the
+ document implementation as the third argument to linkifyElement.&#x27;);
+	}
+
+	opts = new Options(opts);
+	return linkifyElementHelper(element, opts, doc);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var _html5NamedCharRefs = require(&#x27;./html5-named-char-refs&#x27;);
+
+var _html5NamedCharRefs2 = _interopRequireDefault(_html5NamedCharRefs);
+
+function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? obj : { default: obj }; }
+
+function tokenize(input, options) {
+  var tokenizer = new _tokenizer2.<span class="apidocCodeKeywordSpan">default</span>(new _entityParser2.default(_html5NamedCharRefs2
+.default), options);
+  return tokenizer.tokenize(input);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.linkify_html" id="apidoc.module.linkifyjs.linkify_html">module linkifyjs.linkify_html</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.linkify_html.default" id="apidoc.element.linkifyjs.linkify_html.default">
+        function <span class="apidocSignatureSpan">linkifyjs.linkify_html.</span>default
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function linkifyHtml(str) {
+	var opts = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : {};
+
+	var tokens = _simpleHtmlTokenizer2.default.tokenize(str);
+	var linkifiedTokens = [];
+	var linkified = [];
+	var i;
+
+	opts = new Options(opts);
+
+	// Linkify the tokens given by the parser
+	for (i = 0; i &#x3c; tokens.length; i++) {
+		var token = tokens[i];
+
+		if (token.type === StartTag) {
+			linkifiedTokens.push(token);
+
+			// Ignore all the contents of ignored tags
+			var tagName = token.tagName.toUpperCase();
+			var isIgnored = tagName === &#x27;A&#x27; || options.contains(opts.ignoreTags, tagName);
+			if (!isIgnored) {
+				continue;
+			}
+
+			var preskipLen = linkifiedTokens.length;
+			skipTagTokens(tagName, tokens, ++i, linkifiedTokens);
+			i += linkifiedTokens.length - preskipLen - 1;
+			continue;
+		} else if (token.type !== Chars) {
+			// Skip this token, it&#x27;s not important
+			linkifiedTokens.push(token);
+			continue;
+		}
+
+		// Valid text token, linkify it!
+		var linkifedChars = linkifyChars(token.chars, opts);
+		linkifiedTokens.push.apply(linkifiedTokens, linkifedChars);
+	}
+
+	// Convert the tokens back into a string
+	for (i = 0; i &#x3c; linkifiedTokens.length; i++) {
+		var _token = linkifiedTokens[i];
+		switch (_token.type) {
+			case StartTag:
+				var link = &#x27;&#x3c;&#x27; + _token.tagName;
+				if (_token.attributes.length &#x3e; 0) {
+					var attrs = attrsToStrings(_token.attributes);
+					link += &#x27; &#x27; + attrs.join(&#x27; &#x27;);
+				}
+				link += &#x27;&#x3e;&#x27;;
+				linkified.push(link);
+				break;
+			case EndTag:
+				linkified.push(&#x27;&#x3c;/&#x27; + _token.tagName + &#x27;&#x3e;&#x27;);
+				break;
+			case Chars:
+				linkified.push(escapeText(_token.chars));
+				break;
+			case Comment:
+				linkified.push(&#x27;&#x3c;!--&#x27; + escapeText(_token.chars) + &#x27;--&#x3e;&#x27;);
+				break;
+		}
+	}
+
+	return linkified.join(&#x27;&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var _html5NamedCharRefs = require(&#x27;./html5-named-char-refs&#x27;);
+
+var _html5NamedCharRefs2 = _interopRequireDefault(_html5NamedCharRefs);
+
+function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? obj : { default: obj }; }
+
+function tokenize(input, options) {
+  var tokenizer = new _tokenizer2.<span class="apidocCodeKeywordSpan">default</span>(new _entityParser2.default(_html5NamedCharRefs2
+.default), options);
+  return tokenizer.tokenize(input);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.linkify_jquery" id="apidoc.module.linkifyjs.linkify_jquery">module linkifyjs.linkify_jquery</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.linkify_jquery.default" id="apidoc.element.linkifyjs.linkify_jquery.default">
+        function <span class="apidocSignatureSpan">linkifyjs.linkify_jquery.</span>default
+        <span class="apidocSignatureSpan">($)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function apply($) {
+	var doc = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : false;
+
+
+	$.fn = $.fn || {};
+
+	try {
+		doc = doc || document || window &#x26;&#x26; window.document || global &#x26;&#x26; global.document;
+	} catch (e) {/* do nothing for now */}
+
+	if (!doc) {
+		throw new Error(&#x27;Cannot find document implementation. &#x27; + &#x27;If you are in a non-browser environment like Node.js, &#x27; + &#x27;pass the
+ document implementation as the second argument to linkify/jquery&#x27;);
+	}
+
+	if (typeof $.fn.linkify === &#x27;function&#x27;) {
+		// Already applied
+		return;
+	}
+
+	function jqLinkify(opts) {
+		opts = _linkifyElement2.default.normalize(opts);
+		return this.each(function () {
+			_linkifyElement2.default.helper(this, opts, doc);
+		});
+	}
+
+	$.fn.linkify = jqLinkify;
+
+	$(doc).ready(function () {
+		$(&#x27;[data-linkify]&#x27;).each(function () {
+			var $this = $(this);
+			var data = $this.data();
+			var target = data.linkify;
+			var nl2br = data.linkifyNlbr;
+			var options = {
+				attributes: data.linkifyAttributes,
+				defaultProtocol: data.linkifyDefaultProtocol,
+				events: data.linkifyEvents,
+				format: data.linkifyFormat,
+				formatHref: data.linkifyFormatHref,
+				nl2br: !!nl2br &#x26;&#x26; nl2br !== 0 &#x26;&#x26; nl2br !== &#x27;false&#x27;,
+				tagName: data.linkifyTagname,
+				target: data.linkifyTarget,
+				className: data.linkifyClassName || data.linkifyLinkclass, // linkClass is deprecated
+				validate: data.linkifyValidate,
+				ignoreTags: data.linkifyIgnoreTags
+			};
+			var $target = target === &#x27;this&#x27; ? $this : $this.find(target);
+			$target.linkify(options);
+		});
+	});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var _html5NamedCharRefs = require(&#x27;./html5-named-char-refs&#x27;);
+
+var _html5NamedCharRefs2 = _interopRequireDefault(_html5NamedCharRefs);
+
+function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? obj : { default: obj }; }
+
+function tokenize(input, options) {
+  var tokenizer = new _tokenizer2.<span class="apidocCodeKeywordSpan">default</span>(new _entityParser2.default(_html5NamedCharRefs2
+.default), options);
+  return tokenizer.tokenize(input);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.linkify_react" id="apidoc.module.linkifyjs.linkify_react">module linkifyjs.linkify_react</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.linkify_react.default" id="apidoc.element.linkifyjs.linkify_react.default">
+        function <span class="apidocSignatureSpan">linkifyjs.linkify_react.</span>default
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (props, context, updater) {
+  // This constructor gets overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    process.env.NODE_ENV !== &#x27;production&#x27; ? warning(this instanceof Constructor, &#x27;Something is calling a React component directly
+. Use a factory or &#x27; + &#x27;JSX instead. See: https://fb.me/react-legacyfactory&#x27;) : void 0;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindPairs.length) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn&#x27;t have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    // We allow auto-mocks to proceed as if they&#x27;re returning null.
+    if (initialState === undefined &#x26;&#x26; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === &#x27;object&#x27; &#x26;&#x26; !Array.isArray(initialState)) ? process.env.NODE_ENV !== &#x27;production&#x27; ? invariant(false, &#x27;%
+s.getInitialState(): must return an object or null&#x27;, Constructor.displayName || &#x27;ReactCompositeComponent&#x27;) : _prodInvariant(&#x27;82&#x27;,
+Constructor.displayName || &#x27;ReactCompositeComponent&#x27;) : void 0;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var _html5NamedCharRefs = require(&#x27;./html5-named-char-refs&#x27;);
+
+var _html5NamedCharRefs2 = _interopRequireDefault(_html5NamedCharRefs);
+
+function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? obj : { default: obj }; }
+
+function tokenize(input, options) {
+  var tokenizer = new _tokenizer2.<span class="apidocCodeKeywordSpan">default</span>(new _entityParser2.default(_html5NamedCharRefs2
+.default), options);
+  return tokenizer.tokenize(input);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.linkify_string" id="apidoc.module.linkifyjs.linkify_string">module linkifyjs.linkify_string</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.linkify_string.default" id="apidoc.element.linkifyjs.linkify_string.default">
+        function <span class="apidocSignatureSpan">linkifyjs.linkify_string.</span>default
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function linkifyStr(str) {
+	var opts = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : {};
+
+	opts = new Options(opts);
+
+	var tokens = tokenize(str);
+	var result = [];
+
+	for (var i = 0; i &#x3c; tokens.length; i++) {
+		var token = tokens[i];
+
+		if (token.type === &#x27;nl&#x27; &#x26;&#x26; opts.nl2br) {
+			result.push(&#x27;&#x3c;br&#x3e;\n&#x27;);
+			continue;
+		} else if (!token.isLink || !opts.check(token)) {
+			result.push(escapeText(token.toString()));
+			continue;
+		}
+
+		var _opts$resolve = opts.resolve(token),
+		    formatted = _opts$resolve.formatted,
+		    formattedHref = _opts$resolve.formattedHref,
+		    tagName = _opts$resolve.tagName,
+		    className = _opts$resolve.className,
+		    target = _opts$resolve.target,
+		    attributes = _opts$resolve.attributes;
+
+		var link = &#x27;&#x3c;&#x27; + tagName + &#x27; href=&#x22;&#x27; + escapeAttr(formattedHref) + &#x27;&#x22;&#x27;;
+
+		if (className) {
+			link += &#x27; class=&#x22;&#x27; + escapeAttr(className) + &#x27;&#x22;&#x27;;
+		}
+
+		if (target) {
+			link += &#x27; target=&#x22;&#x27; + escapeAttr(target) + &#x27;&#x22;&#x27;;
+		}
+
+		if (attributes) {
+			link += &#x27; &#x27; + attributesToString(attributes);
+		}
+
+		link += &#x27;&#x3e;&#x27; + escapeText(formatted) + &#x27;&#x3c;/&#x27; + tagName + &#x27;&#x3e;&#x27;;
+		result.push(link);
+	}
+
+	return result.join(&#x27;&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var _html5NamedCharRefs = require(&#x27;./html5-named-char-refs&#x27;);
+
+var _html5NamedCharRefs2 = _interopRequireDefault(_html5NamedCharRefs);
+
+function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? obj : { default: obj }; }
+
+function tokenize(input, options) {
+  var tokenizer = new _tokenizer2.<span class="apidocCodeKeywordSpan">default</span>(new _entityParser2.default(_html5NamedCharRefs2
+.default), options);
+  return tokenizer.tokenize(input);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.options" id="apidoc.module.linkifyjs.options">module linkifyjs.options</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.options.Options" id="apidoc.element.linkifyjs.options.Options">
+        function <span class="apidocSignatureSpan">linkifyjs.options.</span>Options
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Options(opts) {
+	opts = opts || {};
+
+	this.defaultProtocol = opts.defaultProtocol || defaults.defaultProtocol;
+	this.events = opts.events || defaults.events;
+	this.format = opts.format || defaults.format;
+	this.formatHref = opts.formatHref || defaults.formatHref;
+	this.nl2br = opts.nl2br || defaults.nl2br;
+	this.tagName = opts.tagName || defaults.tagName;
+	this.target = opts.target || defaults.target;
+	this.validate = opts.validate || defaults.validate;
+	this.ignoreTags = [];
+
+	// linkAttributes and linkClass is deprecated
+	this.attributes = opts.attributes || opts.linkAttributes || defaults.attributes;
+	this.className = opts.className || opts.linkClass || defaults.className;
+
+	// Make all tags names upper case
+
+	var ignoredTags = opts.ignoreTags || defaults.ignoreTags;
+	for (var i = 0; i &#x3c; ignoredTags.length; i++) {
+		this.ignoreTags.push(ignoredTags[i].toUpperCase());
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.options.contains" id="apidoc.element.linkifyjs.options.contains">
+        function <span class="apidocSignatureSpan">linkifyjs.options.</span>contains
+        <span class="apidocSignatureSpan">(arr, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function contains(arr, value) {
+	for (var i = 0; i &#x3c; arr.length; i++) {
+		if (arr[i] === value) {
+			return true;
+		}
+	}
+	return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	if (!element || element.nodeType !== HTML_NODE) {
+		throw new Error(&#x27;Cannot linkify &#x27; + element + &#x27; - Invalid DOM Node type&#x27;);
+	}
+
+	var ignoreTags = opts.ignoreTags;
+
+	// Is this element already a link?
+	if (element.tagName === &#x27;A&#x27; || options.<span class="apidocCodeKeywordSpan">contains</span>(ignoreTags, element.tagName
+)) {
+		// No need to linkify
+		return element;
+	}
+
+	var childElement = element.firstChild;
+
+	while (childElement) {
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.options.Options" id="apidoc.module.linkifyjs.options.Options">module linkifyjs.options.Options</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.options.Options.Options" id="apidoc.element.linkifyjs.options.Options.Options">
+        function <span class="apidocSignatureSpan">linkifyjs.options.</span>Options
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Options(opts) {
+	opts = opts || {};
+
+	this.defaultProtocol = opts.defaultProtocol || defaults.defaultProtocol;
+	this.events = opts.events || defaults.events;
+	this.format = opts.format || defaults.format;
+	this.formatHref = opts.formatHref || defaults.formatHref;
+	this.nl2br = opts.nl2br || defaults.nl2br;
+	this.tagName = opts.tagName || defaults.tagName;
+	this.target = opts.target || defaults.target;
+	this.validate = opts.validate || defaults.validate;
+	this.ignoreTags = [];
+
+	// linkAttributes and linkClass is deprecated
+	this.attributes = opts.attributes || opts.linkAttributes || defaults.attributes;
+	this.className = opts.className || opts.linkClass || defaults.className;
+
+	// Make all tags names upper case
+
+	var ignoredTags = opts.ignoreTags || defaults.ignoreTags;
+	for (var i = 0; i &#x3c; ignoredTags.length; i++) {
+		this.ignoreTags.push(ignoredTags[i].toUpperCase());
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.options.Options.prototype" id="apidoc.module.linkifyjs.options.Options.prototype">module linkifyjs.options.Options.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.options.Options.prototype.check" id="apidoc.element.linkifyjs.options.Options.prototype.check">
+        function <span class="apidocSignatureSpan">linkifyjs.options.Options.prototype.</span>check
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function check(token) {
+		return this.get(&#x27;validate&#x27;, token.toString(), token);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		}
+
+		var token = _ref;
+
+		if (token.type === &#x27;nl&#x27; &#x26;&#x26; opts.nl2br) {
+			result.push(doc.createElement(&#x27;br&#x27;));
+			continue;
+		} else if (!token.isLink || !opts.<span class="apidocCodeKeywordSpan">check</span>(token)) {
+			result.push(doc.createTextNode(token.toString()));
+			continue;
+		}
+
+		var _opts$resolve = opts.resolve(token),
+		    formatted = _opts$resolve.formatted,
+		    formattedHref = _opts$resolve.formattedHref,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.options.Options.prototype.get" id="apidoc.element.linkifyjs.options.Options.prototype.get">
+        function <span class="apidocSignatureSpan">linkifyjs.options.Options.prototype.</span>get
+        <span class="apidocSignatureSpan">(key, operator, token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function get(key, operator, token) {
+		var option = this[key];
+
+		if (!option) {
+			return option;
+		}
+
+		switch (typeof option === &#x27;undefined&#x27; ? &#x27;undefined&#x27; : _typeof(option)) {
+			case &#x27;function&#x27;:
+				return option(operator, token.type);
+			case &#x27;object&#x27;:
+				var optionValue = option[token.type] || defaults[key];
+				return typeof optionValue === &#x27;function&#x27; ? optionValue(operator, token.type) : optionValue;
+		}
+
+		return option;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.options.Options.prototype.getObject" id="apidoc.element.linkifyjs.options.Options.prototype.getObject">
+        function <span class="apidocSignatureSpan">linkifyjs.options.Options.prototype.</span>getObject
+        <span class="apidocSignatureSpan">(key, operator, token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getObject(key, operator, token) {
+		var option = this[key];
+		return typeof option === &#x27;function&#x27; ? option(operator, token.type) : option;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.options.Options.prototype.resolve" id="apidoc.element.linkifyjs.options.Options.prototype.resolve">
+        function <span class="apidocSignatureSpan">linkifyjs.options.Options.prototype.</span>resolve
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resolve(token) {
+		var href = token.toHref(this.defaultProtocol);
+		return {
+			formatted: this.get(&#x27;format&#x27;, token.toString(), token),
+			formattedHref: this.get(&#x27;formatHref&#x27;, href, token),
+			tagName: this.get(&#x27;tagName&#x27;, href, token),
+			className: this.get(&#x27;className&#x27;, href, token),
+			target: this.get(&#x27;target&#x27;, href, token),
+			events: this.getObject(&#x27;events&#x27;, href, token),
+			attributes: this.getObject(&#x27;attributes&#x27;, href, token)
+		};
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+			result.push(doc.createElement(&#x27;br&#x27;));
+			continue;
+		} else if (!token.isLink || !opts.check(token)) {
+			result.push(doc.createTextNode(token.toString()));
+			continue;
+		}
+
+		var _opts$resolve = opts.<span class="apidocCodeKeywordSpan">resolve</span>(token),
+		    formatted = _opts$resolve.formatted,
+		    formattedHref = _opts$resolve.formattedHref,
+		    tagName = _opts$resolve.tagName,
+		    className = _opts$resolve.className,
+		    target = _opts$resolve.target,
+		    events = _opts$resolve.events,
+		    attributes = _opts$resolve.attributes;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.options.defaults" id="apidoc.module.linkifyjs.options.defaults">module linkifyjs.options.defaults</a></h1>
+
+
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.options.defaults.format" id="apidoc.element.linkifyjs.options.defaults.format">
+        function <span class="apidocSignatureSpan">linkifyjs.options.defaults.</span>format
+        <span class="apidocSignatureSpan">(val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function noop(val) {
+	return val;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.options.defaults.formatHref" id="apidoc.element.linkifyjs.options.defaults.formatHref">
+        function <span class="apidocSignatureSpan">linkifyjs.options.defaults.</span>formatHref
+        <span class="apidocSignatureSpan">(val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function noop(val) {
+	return val;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.options.defaults.target" id="apidoc.element.linkifyjs.options.defaults.target">
+        function <span class="apidocSignatureSpan">linkifyjs.options.defaults.</span>target
+        <span class="apidocSignatureSpan">(href, type)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function typeToTarget(href, type) {
+	return type === &#x27;url&#x27; ? &#x27;_blank&#x27; : null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.parser" id="apidoc.module.linkifyjs.parser">module linkifyjs.parser</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.State" id="apidoc.element.linkifyjs.parser.State">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.</span>State
+        <span class="apidocSignatureSpan">(tClass)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">State = function (tClass) {
+		this.j = [];
+		this.T = tClass || null;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.run" id="apidoc.element.linkifyjs.parser.run">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.</span>run
+        <span class="apidocSignatureSpan">(tokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function run(tokens) {
+	var len = tokens.length;
+	var cursor = 0;
+	var multis = [];
+	var textTokens = [];
+
+	while (cursor &#x3c; len) {
+		var state = S_START;
+		var secondState = null;
+		var nextState = null;
+		var multiLength = 0;
+		var latestAccepting = null;
+		var sinceAccepts = -1;
+
+		while (cursor &#x3c; len &#x26;&#x26; !(secondState = state.next(tokens[cursor]))) {
+			// Starting tokens with nowhere to jump to.
+			// Consider these to be just plain text
+			textTokens.push(tokens[cursor++]);
+		}
+
+		while (cursor &#x3c; len &#x26;&#x26; (nextState = secondState || state.next(tokens[cursor]))) {
+
+			// Get the next state
+			secondState = null;
+			state = nextState;
+
+			// Keep track of the latest accepting state
+			if (state.accepts()) {
+				sinceAccepts = 0;
+				latestAccepting = state;
+			} else if (sinceAccepts &#x3e;= 0) {
+				sinceAccepts++;
+			}
+
+			cursor++;
+			multiLength++;
+		}
+
+		if (sinceAccepts &#x3c; 0) {
+
+			// No accepting state was found, part of a regular text token
+			// Add all the tokens we looked at to the text tokens array
+			for (var i = cursor - multiLength; i &#x3c; cursor; i++) {
+				textTokens.push(tokens[i]);
+			}
+		} else {
+
+			// Accepting state!
+
+			// First close off the textTokens (if available)
+			if (textTokens.length &#x3e; 0) {
+				multis.push(new _multi.TEXT(textTokens));
+				textTokens = [];
+			}
+
+			// Roll back to the latest accepting state
+			cursor -= sinceAccepts;
+			multiLength -= sinceAccepts;
+
+			// Create a new multitoken
+			var MULTI = latestAccepting.emit();
+			multis.push(new MULTI(tokens.slice(cursor - multiLength, cursor)));
+		}
+	}
+
+	// Finally close off the textTokens (if available)
+	if (textTokens.length &#x3e; 0) {
+		multis.push(new _multi.TEXT(textTokens));
+	}
+
+	return multis;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+	Converts a string into tokens that represent linkable and non-linkable bits
+	@method tokenize
+	@param {String} str
+	@return {Array} tokens
+*/
+var tokenize = function tokenize(str) {
+	return parser.<span class="apidocCodeKeywordSpan">run</span>(scanner.run(str));
+};
+
+/**
+	Returns a list of linkable items in the given string.
+*/
+var find = function find(str) {
+	var type = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : null;
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.parser.State" id="apidoc.module.linkifyjs.parser.State">module linkifyjs.parser.State</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.State.State" id="apidoc.element.linkifyjs.parser.State.State">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.</span>State
+        <span class="apidocSignatureSpan">(tClass)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">State = function (tClass) {
+		this.j = [];
+		this.T = tClass || null;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.parser.State.prototype" id="apidoc.module.linkifyjs.parser.State.prototype">module linkifyjs.parser.State.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.State.prototype.constructor" id="apidoc.element.linkifyjs.parser.State.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.State.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(tClass)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (tClass) {
+		this.j = [];
+		this.T = tClass || null;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.State.prototype.jump" id="apidoc.element.linkifyjs.parser.State.prototype.jump">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.State.prototype.</span>jump
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function jump(token) {
+		var tClass = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : null;
+
+		var state = this.next(new token(&#x27;&#x27;)); // dummy temp token
+		if (state === this.defaultTransition) {
+			// Make a new state!
+			state = new this.constructor(tClass);
+			this.on(token, state);
+		} else if (tClass) {
+			state.T = tClass;
+		}
+		return state;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.State.prototype.test" id="apidoc.element.linkifyjs.parser.State.prototype.test">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.State.prototype.</span>test
+        <span class="apidocSignatureSpan">(token, tokenClass)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function test(token, tokenClass) {
+		return token instanceof tokenClass;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+&#x3c;script src=&#x22;linkify.amd.js&#x22;&#x3e;&#x3c;/script&#x3e;
+&#x3c;script src=&#x22;linkify-plugin-hashtag.amd.js&#x22;&#x3e;&#x3c;/script&#x3e; &#x3c;!-- optional --&#x3e;
+&#x3c;script src=&#x22;linkify-element.amd.js&#x22;&#x3e;&#x3c;/script&#x3e;
+```
+
+```js
+require([&#x27;linkify&#x27;], function (linkify) {
+linkify.<span class="apidocCodeKeywordSpan">test</span>(&#x27;github.com&#x27;); // true
+linkify.test(&#x27;github.com&#x27;, &#x27;email&#x27;); // false
+});
+
+require([&#x27;linkify-element&#x27;], function (linkifyElement) {
+
+// Linkify the #sidebar element
+linkifyElement(document.getElementById(&#x27;sidebar&#x27;), {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.parser.TOKENS" id="apidoc.module.linkifyjs.parser.TOKENS">module linkifyjs.parser.TOKENS</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.Base" id="apidoc.element.linkifyjs.parser.TOKENS.Base">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.</span>Base
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Base = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.EMAIL" id="apidoc.element.linkifyjs.parser.TOKENS.EMAIL">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.</span>EMAIL
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">EMAIL = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.MAILTOEMAIL" id="apidoc.element.linkifyjs.parser.TOKENS.MAILTOEMAIL">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.</span>MAILTOEMAIL
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">MAILTOEMAIL = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.NL" id="apidoc.element.linkifyjs.parser.TOKENS.NL">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.</span>NL
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">NL = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.TEXT" id="apidoc.element.linkifyjs.parser.TOKENS.TEXT">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.</span>TEXT
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TEXT = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.URL" id="apidoc.element.linkifyjs.parser.TOKENS.URL">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.</span>URL
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">URL = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.parser.TOKENS.Base.prototype" id="apidoc.module.linkifyjs.parser.TOKENS.Base.prototype">module linkifyjs.parser.TOKENS.Base.prototype</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.Base.prototype.toHref" id="apidoc.element.linkifyjs.parser.TOKENS.Base.prototype.toHref">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.Base.prototype.</span>toHref
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toHref() {
+		return this.toString();
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.Base.prototype.toObject" id="apidoc.element.linkifyjs.parser.TOKENS.Base.prototype.toObject">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.Base.prototype.</span>toObject
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toObject() {
+		var protocol = arguments.length &#x3e; 0 &#x26;&#x26; arguments[0] !== undefined ? arguments[0] : &#x27;http&#x27;;
+
+		return {
+			type: this.type,
+			value: this.toString(),
+			href: this.toHref(protocol)
+		};
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+	var tokens = tokenize(str);
+	var filtered = [];
+
+	for (var i = 0; i &#x3c; tokens.length; i++) {
+		var token = tokens[i];
+		if (token.isLink &#x26;&#x26; (!type || token.type === type)) {
+			filtered.push(token.<span class="apidocCodeKeywordSpan">toObject</span>());
+		}
+	}
+
+	return filtered;
+};
+
+/**
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.Base.prototype.toString" id="apidoc.element.linkifyjs.parser.TOKENS.Base.prototype.toString">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.Base.prototype.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() {
+		var result = [];
+		for (var i = 0; i &#x3c; this.v.length; i++) {
+			result.push(this.v[i].toString());
+		}
+		return result.join(&#x27;&#x27;);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+		var token = _ref;
+
+		if (token.type === &#x27;nl&#x27; &#x26;&#x26; opts.nl2br) {
+			result.push(doc.createElement(&#x27;br&#x27;));
+			continue;
+		} else if (!token.isLink || !opts.check(token)) {
+			result.push(doc.createTextNode(token.<span class="apidocCodeKeywordSpan">toString</span>()));
+			continue;
+		}
+
+		var _opts$resolve = opts.resolve(token),
+		    formatted = _opts$resolve.formatted,
+		    formattedHref = _opts$resolve.formattedHref,
+		    tagName = _opts$resolve.tagName,
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.parser.TOKENS.EMAIL.prototype" id="apidoc.module.linkifyjs.parser.TOKENS.EMAIL.prototype">module linkifyjs.parser.TOKENS.EMAIL.prototype</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.EMAIL.prototype.constructor" id="apidoc.element.linkifyjs.parser.TOKENS.EMAIL.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.EMAIL.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.EMAIL.prototype.toHref" id="apidoc.element.linkifyjs.parser.TOKENS.EMAIL.prototype.toHref">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.EMAIL.prototype.</span>toHref
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toHref() {
+		var tokens = this.v;
+		return &#x27;mailto:&#x27; + this.toString();
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.parser.TOKENS.MAILTOEMAIL.prototype" id="apidoc.module.linkifyjs.parser.TOKENS.MAILTOEMAIL.prototype">module linkifyjs.parser.TOKENS.MAILTOEMAIL.prototype</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.MAILTOEMAIL.prototype.constructor" id="apidoc.element.linkifyjs.parser.TOKENS.MAILTOEMAIL.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.MAILTOEMAIL.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.parser.TOKENS.NL.prototype" id="apidoc.module.linkifyjs.parser.TOKENS.NL.prototype">module linkifyjs.parser.TOKENS.NL.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.NL.prototype.constructor" id="apidoc.element.linkifyjs.parser.TOKENS.NL.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.NL.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.parser.TOKENS.TEXT.prototype" id="apidoc.module.linkifyjs.parser.TOKENS.TEXT.prototype">module linkifyjs.parser.TOKENS.TEXT.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.TEXT.prototype.constructor" id="apidoc.element.linkifyjs.parser.TOKENS.TEXT.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.TEXT.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.parser.TOKENS.URL.prototype" id="apidoc.module.linkifyjs.parser.TOKENS.URL.prototype">module linkifyjs.parser.TOKENS.URL.prototype</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.URL.prototype.constructor" id="apidoc.element.linkifyjs.parser.TOKENS.URL.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.URL.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.URL.prototype.hasProtocol" id="apidoc.element.linkifyjs.parser.TOKENS.URL.prototype.hasProtocol">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.URL.prototype.</span>hasProtocol
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function hasProtocol() {
+		return this.v[0] instanceof _text.PROTOCOL;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.parser.TOKENS.URL.prototype.toHref" id="apidoc.element.linkifyjs.parser.TOKENS.URL.prototype.toHref">
+        function <span class="apidocSignatureSpan">linkifyjs.parser.TOKENS.URL.prototype.</span>toHref
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toHref() {
+		var protocol = arguments.length &#x3e; 0 &#x26;&#x26; arguments[0] !== undefined ? arguments[0] : &#x27;http&#x27;;
+
+		var hasProtocol = false;
+		var hasSlashSlash = false;
+		var tokens = this.v;
+		var result = [];
+		var i = 0;
+
+		// Make the first part of the domain lowercase
+		// Lowercase protocol
+		while (tokens[i] instanceof _text.PROTOCOL) {
+			hasProtocol = true;
+			result.push(tokens[i].toString().toLowerCase());
+			i++;
+		}
+
+		// Skip slash-slash
+		while (tokens[i] instanceof _text.SLASH) {
+			hasSlashSlash = true;
+			result.push(tokens[i].toString());
+			i++;
+		}
+
+		// Lowercase all other characters in the domain
+		while (isDomainToken(tokens[i])) {
+			result.push(tokens[i].toString().toLowerCase());
+			i++;
+		}
+
+		// Leave all other characters as they were written
+		for (; i &#x3c; tokens.length; i++) {
+			result.push(tokens[i].toString());
+		}
+
+		result = result.join(&#x27;&#x27;);
+
+		if (!(hasProtocol || hasSlashSlash)) {
+			result = protocol + &#x27;://&#x27; + result;
+		}
+
+		return result;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.react" id="apidoc.module.linkifyjs.react">module linkifyjs.react</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.react.react" id="apidoc.element.linkifyjs.react.react">
+        function <span class="apidocSignatureSpan">linkifyjs.</span>react
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">react = function (props, context, updater) {
+  // This constructor gets overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    process.env.NODE_ENV !== &#x27;production&#x27; ? warning(this instanceof Constructor, &#x27;Something is calling a React component directly
+. Use a factory or &#x27; + &#x27;JSX instead. See: https://fb.me/react-legacyfactory&#x27;) : void 0;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindPairs.length) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn&#x27;t have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    // We allow auto-mocks to proceed as if they&#x27;re returning null.
+    if (initialState === undefined &#x26;&#x26; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === &#x27;object&#x27; &#x26;&#x26; !Array.isArray(initialState)) ? process.env.NODE_ENV !== &#x27;production&#x27; ? invariant(false, &#x27;%
+s.getInitialState(): must return an object or null&#x27;, Constructor.displayName || &#x27;ReactCompositeComponent&#x27;) : _prodInvariant(&#x27;82&#x27;,
+Constructor.displayName || &#x27;ReactCompositeComponent&#x27;) : void 0;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.react.prototype" id="apidoc.module.linkifyjs.react.prototype">module linkifyjs.react.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.react.prototype.constructor" id="apidoc.element.linkifyjs.react.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (props, context, updater) {
+  // This constructor gets overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    process.env.NODE_ENV !== &#x27;production&#x27; ? warning(this instanceof Constructor, &#x27;Something is calling a React component directly
+. Use a factory or &#x27; + &#x27;JSX instead. See: https://fb.me/react-legacyfactory&#x27;) : void 0;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindPairs.length) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn&#x27;t have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    // We allow auto-mocks to proceed as if they&#x27;re returning null.
+    if (initialState === undefined &#x26;&#x26; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  !(typeof initialState === &#x27;object&#x27; &#x26;&#x26; !Array.isArray(initialState)) ? process.env.NODE_ENV !== &#x27;production&#x27; ? invariant(false, &#x27;%
+s.getInitialState(): must return an object or null&#x27;, Constructor.displayName || &#x27;ReactCompositeComponent&#x27;) : _prodInvariant(&#x27;82&#x27;,
+Constructor.displayName || &#x27;ReactCompositeComponent&#x27;) : void 0;
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.react.prototype.render" id="apidoc.element.linkifyjs.react.prototype.render">
+        function <span class="apidocSignatureSpan">linkifyjs.react.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+		// Copy over all non-linkify-specific props
+		var newProps = { key: &#x27;linkified-element-0&#x27; };
+		for (var prop in this.props) {
+			if (prop !== &#x27;options&#x27; &#x26;&#x26; prop !== &#x27;tagName&#x27;) {
+				newProps[prop] = this.props[prop];
+			}
+		}
+
+		var opts = new Options(this.props.options);
+		var tagName = this.props.tagName || &#x27;span&#x27;;
+		var element = _react2.default.createElement(tagName, newProps);
+
+		return linkifyReactElement(element, opts, 0);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+&#x3c;script src=&#x22;linkify.js&#x22;&#x3e;&#x3c;/script&#x3e;
+&#x3c;script src=&#x22;linkify-react.js&#x22;&#x3e;&#x3c;/script&#x3e;
+```
+
+```jsx
+linkify.test(&#x27;dev@example.com&#x27;); // true
+
+ReactDOM.<span class="apidocCodeKeywordSpan">render</span>(
+  &#x3c;Linkify options={{ignoreTags: [&#x27;style&#x27;]}}&#x3e;
+    Check out soapboxhq.com it is great!
+  &#x3c;/Linkify&#x3e;,
+  document.getElementById(&#x27;#container&#x27;);
+);
+```
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner" id="apidoc.module.linkifyjs.scanner">module linkifyjs.scanner</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.State" id="apidoc.element.linkifyjs.scanner.State">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.</span>State
+        <span class="apidocSignatureSpan">(tClass)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">State = function (tClass) {
+		this.j = [];
+		this.T = tClass || null;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.run" id="apidoc.element.linkifyjs.scanner.run">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.</span>run
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function run(str) {
+
+	// The state machine only looks at lowercase strings.
+	// This selective `toLowerCase` is used because lowercasing the entire
+	// string causes the length and character position to vary in some in some
+	// non-English strings. This happens only on V8-based runtimes.
+	var lowerStr = str.replace(/[A-Z]/g, function (c) {
+		return c.toLowerCase();
+	});
+	var len = str.length;
+	var tokens = []; // return value
+
+	var cursor = 0;
+
+	// Tokenize the string
+	while (cursor &#x3c; len) {
+		var state = S_START;
+		var secondState = null;
+		var nextState = null;
+		var tokenLength = 0;
+		var latestAccepting = null;
+		var sinceAccepts = -1;
+
+		while (cursor &#x3c; len &#x26;&#x26; (nextState = state.next(lowerStr[cursor]))) {
+			secondState = null;
+			state = nextState;
+
+			// Keep track of the latest accepting state
+			if (state.accepts()) {
+				sinceAccepts = 0;
+				latestAccepting = state;
+			} else if (sinceAccepts &#x3e;= 0) {
+				sinceAccepts++;
+			}
+
+			tokenLength++;
+			cursor++;
+		}
+
+		if (sinceAccepts &#x3c; 0) {
+			continue;
+		} // Should never happen
+
+		// Roll back to the latest accepting state
+		cursor -= sinceAccepts;
+		tokenLength -= sinceAccepts;
+
+		// Get the class for the new token
+		var TOKEN = latestAccepting.emit(); // Current token class
+
+		// No more jumps, just make a new token
+		tokens.push(new TOKEN(str.substr(cursor - tokenLength, tokenLength)));
+	}
+
+	return tokens;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+	Converts a string into tokens that represent linkable and non-linkable bits
+	@method tokenize
+	@param {String} str
+	@return {Array} tokens
+*/
+var tokenize = function tokenize(str) {
+	return parser.<span class="apidocCodeKeywordSpan">run</span>(scanner.run(str));
+};
+
+/**
+	Returns a list of linkable items in the given string.
+*/
+var find = function find(str) {
+	var type = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : null;
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.State" id="apidoc.module.linkifyjs.scanner.State">module linkifyjs.scanner.State</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.State.State" id="apidoc.element.linkifyjs.scanner.State.State">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.</span>State
+        <span class="apidocSignatureSpan">(tClass)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">State = function (tClass) {
+		this.j = [];
+		this.T = tClass || null;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.State.prototype" id="apidoc.module.linkifyjs.scanner.State.prototype">module linkifyjs.scanner.State.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.State.prototype.constructor" id="apidoc.element.linkifyjs.scanner.State.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.State.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(tClass)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (tClass) {
+		this.j = [];
+		this.T = tClass || null;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.State.prototype.test" id="apidoc.element.linkifyjs.scanner.State.prototype.test">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.State.prototype.</span>test
+        <span class="apidocSignatureSpan">(character, charOrRegExp)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function test(character, charOrRegExp) {
+		return character === charOrRegExp || charOrRegExp instanceof RegExp &#x26;&#x26; charOrRegExp.test(character);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+&#x3c;script src=&#x22;linkify.amd.js&#x22;&#x3e;&#x3c;/script&#x3e;
+&#x3c;script src=&#x22;linkify-plugin-hashtag.amd.js&#x22;&#x3e;&#x3c;/script&#x3e; &#x3c;!-- optional --&#x3e;
+&#x3c;script src=&#x22;linkify-element.amd.js&#x22;&#x3e;&#x3c;/script&#x3e;
+```
+
+```js
+require([&#x27;linkify&#x27;], function (linkify) {
+linkify.<span class="apidocCodeKeywordSpan">test</span>(&#x27;github.com&#x27;); // true
+linkify.test(&#x27;github.com&#x27;, &#x27;email&#x27;); // false
+});
+
+require([&#x27;linkify-element&#x27;], function (linkifyElement) {
+
+// Linkify the #sidebar element
+linkifyElement(document.getElementById(&#x27;sidebar&#x27;), {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS" id="apidoc.module.linkifyjs.scanner.TOKENS">module linkifyjs.scanner.TOKENS</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.AMPERSAND" id="apidoc.element.linkifyjs.scanner.TOKENS.AMPERSAND">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>AMPERSAND
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">AMPERSAND = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.AT" id="apidoc.element.linkifyjs.scanner.TOKENS.AT">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>AT
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">AT = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.Base" id="apidoc.element.linkifyjs.scanner.TOKENS.Base">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>Base
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Base = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.CLOSEANGLEBRACKET" id="apidoc.element.linkifyjs.scanner.TOKENS.CLOSEANGLEBRACKET">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>CLOSEANGLEBRACKET
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">CLOSEANGLEBRACKET = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.CLOSEBRACE" id="apidoc.element.linkifyjs.scanner.TOKENS.CLOSEBRACE">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>CLOSEBRACE
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">CLOSEBRACE = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.CLOSEBRACKET" id="apidoc.element.linkifyjs.scanner.TOKENS.CLOSEBRACKET">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>CLOSEBRACKET
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">CLOSEBRACKET = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.CLOSEPAREN" id="apidoc.element.linkifyjs.scanner.TOKENS.CLOSEPAREN">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>CLOSEPAREN
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">CLOSEPAREN = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.COLON" id="apidoc.element.linkifyjs.scanner.TOKENS.COLON">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>COLON
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">COLON = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.DOMAIN" id="apidoc.element.linkifyjs.scanner.TOKENS.DOMAIN">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>DOMAIN
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">DOMAIN = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.DOT" id="apidoc.element.linkifyjs.scanner.TOKENS.DOT">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>DOT
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">DOT = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.LOCALHOST" id="apidoc.element.linkifyjs.scanner.TOKENS.LOCALHOST">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>LOCALHOST
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">LOCALHOST = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.MAILTO" id="apidoc.element.linkifyjs.scanner.TOKENS.MAILTO">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>MAILTO
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">MAILTO = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.NL" id="apidoc.element.linkifyjs.scanner.TOKENS.NL">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>NL
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">NL = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.NUM" id="apidoc.element.linkifyjs.scanner.TOKENS.NUM">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>NUM
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">NUM = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.OPENANGLEBRACKET" id="apidoc.element.linkifyjs.scanner.TOKENS.OPENANGLEBRACKET">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>OPENANGLEBRACKET
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">OPENANGLEBRACKET = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.OPENBRACE" id="apidoc.element.linkifyjs.scanner.TOKENS.OPENBRACE">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>OPENBRACE
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">OPENBRACE = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.OPENBRACKET" id="apidoc.element.linkifyjs.scanner.TOKENS.OPENBRACKET">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>OPENBRACKET
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">OPENBRACKET = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.OPENPAREN" id="apidoc.element.linkifyjs.scanner.TOKENS.OPENPAREN">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>OPENPAREN
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">OPENPAREN = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.PLUS" id="apidoc.element.linkifyjs.scanner.TOKENS.PLUS">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>PLUS
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">PLUS = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.POUND" id="apidoc.element.linkifyjs.scanner.TOKENS.POUND">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>POUND
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">POUND = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.PROTOCOL" id="apidoc.element.linkifyjs.scanner.TOKENS.PROTOCOL">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>PROTOCOL
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">PROTOCOL = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.PUNCTUATION" id="apidoc.element.linkifyjs.scanner.TOKENS.PUNCTUATION">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>PUNCTUATION
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">PUNCTUATION = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.QUERY" id="apidoc.element.linkifyjs.scanner.TOKENS.QUERY">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>QUERY
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">QUERY = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.SLASH" id="apidoc.element.linkifyjs.scanner.TOKENS.SLASH">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>SLASH
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SLASH = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.SYM" id="apidoc.element.linkifyjs.scanner.TOKENS.SYM">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>SYM
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SYM = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.TLD" id="apidoc.element.linkifyjs.scanner.TOKENS.TLD">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>TLD
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TLD = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.UNDERSCORE" id="apidoc.element.linkifyjs.scanner.TOKENS.UNDERSCORE">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>UNDERSCORE
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">UNDERSCORE = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.WS" id="apidoc.element.linkifyjs.scanner.TOKENS.WS">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.</span>WS
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">WS = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.AMPERSAND.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.AMPERSAND.prototype">module linkifyjs.scanner.TOKENS.AMPERSAND.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.AMPERSAND.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.AMPERSAND.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.AMPERSAND.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.AT.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.AT.prototype">module linkifyjs.scanner.TOKENS.AT.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.AT.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.AT.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.AT.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.Base.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.Base.prototype">module linkifyjs.scanner.TOKENS.Base.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.Base.prototype.toString" id="apidoc.element.linkifyjs.scanner.TOKENS.Base.prototype.toString">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.Base.prototype.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() {
+		return this.v + &#x27;&#x27;;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+		var token = _ref;
+
+		if (token.type === &#x27;nl&#x27; &#x26;&#x26; opts.nl2br) {
+			result.push(doc.createElement(&#x27;br&#x27;));
+			continue;
+		} else if (!token.isLink || !opts.check(token)) {
+			result.push(doc.createTextNode(token.<span class="apidocCodeKeywordSpan">toString</span>()));
+			continue;
+		}
+
+		var _opts$resolve = opts.resolve(token),
+		    formatted = _opts$resolve.formatted,
+		    formattedHref = _opts$resolve.formattedHref,
+		    tagName = _opts$resolve.tagName,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.CLOSEANGLEBRACKET.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.CLOSEANGLEBRACKET.prototype">module linkifyjs.scanner.TOKENS.CLOSEANGLEBRACKET.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.CLOSEANGLEBRACKET.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.CLOSEANGLEBRACKET.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.CLOSEANGLEBRACKET.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.CLOSEBRACE.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.CLOSEBRACE.prototype">module linkifyjs.scanner.TOKENS.CLOSEBRACE.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.CLOSEBRACE.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.CLOSEBRACE.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.CLOSEBRACE.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.CLOSEBRACKET.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.CLOSEBRACKET.prototype">module linkifyjs.scanner.TOKENS.CLOSEBRACKET.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.CLOSEBRACKET.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.CLOSEBRACKET.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.CLOSEBRACKET.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.CLOSEPAREN.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.CLOSEPAREN.prototype">module linkifyjs.scanner.TOKENS.CLOSEPAREN.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.CLOSEPAREN.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.CLOSEPAREN.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.CLOSEPAREN.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.COLON.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.COLON.prototype">module linkifyjs.scanner.TOKENS.COLON.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.COLON.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.COLON.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.COLON.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.DOMAIN.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.DOMAIN.prototype">module linkifyjs.scanner.TOKENS.DOMAIN.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.DOMAIN.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.DOMAIN.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.DOMAIN.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.DOT.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.DOT.prototype">module linkifyjs.scanner.TOKENS.DOT.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.DOT.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.DOT.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.DOT.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.LOCALHOST.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.LOCALHOST.prototype">module linkifyjs.scanner.TOKENS.LOCALHOST.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.LOCALHOST.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.LOCALHOST.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.LOCALHOST.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.MAILTO.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.MAILTO.prototype">module linkifyjs.scanner.TOKENS.MAILTO.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.MAILTO.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.MAILTO.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.MAILTO.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.NL.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.NL.prototype">module linkifyjs.scanner.TOKENS.NL.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.NL.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.NL.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.NL.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.NUM.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.NUM.prototype">module linkifyjs.scanner.TOKENS.NUM.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.NUM.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.NUM.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.NUM.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.OPENANGLEBRACKET.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.OPENANGLEBRACKET.prototype">module linkifyjs.scanner.TOKENS.OPENANGLEBRACKET.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.OPENANGLEBRACKET.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.OPENANGLEBRACKET.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.OPENANGLEBRACKET.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.OPENBRACE.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.OPENBRACE.prototype">module linkifyjs.scanner.TOKENS.OPENBRACE.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.OPENBRACE.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.OPENBRACE.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.OPENBRACE.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.OPENBRACKET.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.OPENBRACKET.prototype">module linkifyjs.scanner.TOKENS.OPENBRACKET.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.OPENBRACKET.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.OPENBRACKET.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.OPENBRACKET.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.OPENPAREN.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.OPENPAREN.prototype">module linkifyjs.scanner.TOKENS.OPENPAREN.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.OPENPAREN.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.OPENPAREN.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.OPENPAREN.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.PLUS.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.PLUS.prototype">module linkifyjs.scanner.TOKENS.PLUS.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.PLUS.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.PLUS.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.PLUS.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.POUND.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.POUND.prototype">module linkifyjs.scanner.TOKENS.POUND.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.POUND.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.POUND.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.POUND.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.PROTOCOL.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.PROTOCOL.prototype">module linkifyjs.scanner.TOKENS.PROTOCOL.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.PROTOCOL.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.PROTOCOL.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.PROTOCOL.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.PUNCTUATION.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.PUNCTUATION.prototype">module linkifyjs.scanner.TOKENS.PUNCTUATION.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.PUNCTUATION.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.PUNCTUATION.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.PUNCTUATION.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.QUERY.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.QUERY.prototype">module linkifyjs.scanner.TOKENS.QUERY.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.QUERY.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.QUERY.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.QUERY.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.SLASH.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.SLASH.prototype">module linkifyjs.scanner.TOKENS.SLASH.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.SLASH.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.SLASH.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.SLASH.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.SYM.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.SYM.prototype">module linkifyjs.scanner.TOKENS.SYM.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.SYM.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.SYM.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.SYM.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.TLD.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.TLD.prototype">module linkifyjs.scanner.TOKENS.TLD.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.TLD.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.TLD.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.TLD.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.UNDERSCORE.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.UNDERSCORE.prototype">module linkifyjs.scanner.TOKENS.UNDERSCORE.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.UNDERSCORE.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.UNDERSCORE.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.UNDERSCORE.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.scanner.TOKENS.WS.prototype" id="apidoc.module.linkifyjs.scanner.TOKENS.WS.prototype">module linkifyjs.scanner.TOKENS.WS.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.scanner.TOKENS.WS.prototype.constructor" id="apidoc.element.linkifyjs.scanner.TOKENS.WS.prototype.constructor">
+        function <span class="apidocSignatureSpan">linkifyjs.scanner.TOKENS.WS.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (value) {
+		if (value) {
+			this.v = value;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.tokenize" id="apidoc.module.linkifyjs.tokenize">module linkifyjs.tokenize</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.tokenize.default" id="apidoc.element.linkifyjs.tokenize.default">
+        function <span class="apidocSignatureSpan">linkifyjs.tokenize.</span>default
+        <span class="apidocSignatureSpan">(input, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function tokenize(input, options) {
+  var tokenizer = new _tokenizer2.default(new _entityParser2.default(_html5NamedCharRefs2.default), options);
+  return tokenizer.tokenize(input);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var _html5NamedCharRefs = require(&#x27;./html5-named-char-refs&#x27;);
+
+var _html5NamedCharRefs2 = _interopRequireDefault(_html5NamedCharRefs);
+
+function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? obj : { default: obj }; }
+
+function tokenize(input, options) {
+  var tokenizer = new _tokenizer2.<span class="apidocCodeKeywordSpan">default</span>(new _entityParser2.default(_html5NamedCharRefs2
+.default), options);
+  return tokenizer.tokenize(input);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.tokenizer" id="apidoc.module.linkifyjs.tokenizer">module linkifyjs.tokenizer</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.tokenizer.default" id="apidoc.element.linkifyjs.tokenizer.default">
+        function <span class="apidocSignatureSpan">linkifyjs.tokenizer.</span>default
+        <span class="apidocSignatureSpan">(entityParser, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Tokenizer(entityParser, options) {
+  this.token = null;
+  this.startLine = 1;
+  this.startColumn = 0;
+  this.options = options || {};
+  this.tokenizer = new _eventedTokenizer2.default(this, entityParser);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var _html5NamedCharRefs = require(&#x27;./html5-named-char-refs&#x27;);
+
+var _html5NamedCharRefs2 = _interopRequireDefault(_html5NamedCharRefs);
+
+function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? obj : { default: obj }; }
+
+function tokenize(input, options) {
+  var tokenizer = new _tokenizer2.<span class="apidocCodeKeywordSpan">default</span>(new _entityParser2.default(_html5NamedCharRefs2
+.default), options);
+  return tokenizer.tokenize(input);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.linkifyjs.utils" id="apidoc.module.linkifyjs.utils">module linkifyjs.utils</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.utils.isAlpha" id="apidoc.element.linkifyjs.utils.isAlpha">
+        function <span class="apidocSignatureSpan">linkifyjs.utils.</span>isAlpha
+        <span class="apidocSignatureSpan">(char)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isAlpha(char) {
+  return ALPHA.test(char);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.utils.isSpace" id="apidoc.element.linkifyjs.utils.isSpace">
+        function <span class="apidocSignatureSpan">linkifyjs.utils.</span>isSpace
+        <span class="apidocSignatureSpan">(char)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isSpace(char) {
+  return WSP.test(char);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.linkifyjs.utils.preprocessInput" id="apidoc.element.linkifyjs.utils.preprocessInput">
+        function <span class="apidocSignatureSpan">linkifyjs.utils.</span>preprocessInput
+        <span class="apidocSignatureSpan">(input)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function preprocessInput(input) {
+  return input.replace(CRLF, &#x22;\n&#x22;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
